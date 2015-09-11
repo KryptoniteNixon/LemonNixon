@@ -44,11 +44,14 @@ s = 'dog'
 t = 'cat'
 i = 'bird'
 
-print s.find(t,i)
-print s[i:].find(t)
-print s.find(t)[:i]
-print s[i:].find(t)+i
-
 # extracting URL's
-<a href="www.apple.com">
+#start_link = <a href="www.apple.com">
 #page = has the content of a web page as a string
+# refer to the .find operation for "extracting URL's"
+page = ('<div id="top_bin"><div id="top_content" class="width960">'
+'<div class="udacity float-left"><a href="http://udacity.com">')
+#finds the start and end of the link
+start_link = page.find('<a href=')
+end_link = page.find('>',start_link)
+print end_link
+print start_link
