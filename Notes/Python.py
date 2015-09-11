@@ -48,3 +48,7 @@ print s.find(t,i)
 print s[i:].find(t)
 print s.find(t)[:i]
 print s[i:].find(t)+i
+
+# extracting URL's
+<a href="www.apple.com">
+#page = has the content of a web page as a string
