@@ -1,2 +1,0 @@
-print "s"
-t = "cat"
