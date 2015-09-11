@@ -1,0 +1,2 @@
+print "s"
+t = "cat"
