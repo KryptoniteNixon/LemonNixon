@@ -49,9 +49,13 @@ i = 'bird'
 #page = has the content of a web page as a string
 # refer to the .find operation for "extracting URL's"
 page = ('<div id="top_bin"><div id="top_content" class="width960">'
-'<div class="udacity float-left"><a href="http://udacity.com">')
+'<div class="udacity float-left"><a href="http://apple.com">')
 #finds the start and end of the link
 start_link = page.find('<a href=')
 end_link = page.find('>',start_link)
 print end_link
 print start_link
+link = page.find('"',start_link)
+linkend = page.find('"',link + 1)
+url = page[link+1:linkend]
+print url
